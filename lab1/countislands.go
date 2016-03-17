@@ -1,6 +1,6 @@
 package main
 
-func search(grid [][]int8, x int, y int){
+func search(grid [][]int, x int, y int){
     
     if x<0 || y<0 || x>len(grid)-1 || y>len(grid[0])-1 {
         return
@@ -18,7 +18,7 @@ func search(grid [][]int8, x int, y int){
     search(grid, x, y+1)
 }
 
-func CountIslands(grid [][]int8) int {
+func CountIslands(grid [][]int) int {
     if len(grid)==0 || len(grid[0])==0 {
 		return 0
 	}
